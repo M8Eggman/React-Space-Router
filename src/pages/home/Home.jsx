@@ -1,8 +1,11 @@
+import { Link } from "react-router-dom";
 import "./Home.css";
+import Nav from "../../components/nav/Nav";
 
 export default function Home() {
   return (
     <>
+      <Nav />
       <section className="sectionHome">
         <div className="home">
           <div className="homeText">
@@ -13,9 +16,11 @@ export default function Home() {
               we’ll give you a truly out of this world experience!
             </p>
           </div>
-          <div className="homeButton">
-            <button>EXPLORE</button>
-          </div>
+          <Link>
+            <div className="homeButton">
+              <p>EXPLORE</p>
+            </div>
+          </Link>
         </div>
       </section>
     </>

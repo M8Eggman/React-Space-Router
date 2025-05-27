@@ -4,15 +4,11 @@ import dataDestination from "../../data/dataDestination.json";
 
 export default function DestinationContent() {
   const { destination } = useParams();
-  // si destination existe cle = dest sinon moon (valeur par défaut)
-  const cle = destination ? destination : "moon";
-  const data = dataDestination[cle];
+  const data = dataDestination.find((item) => item.link === destination);
+
   return (
     <>
       <section className="sectionDestination">
-        <h2>
-          <span>01</span> PICK YOUR DESTINATION
-        </h2>
         <div className="destination">
           <div className="destinationImg">
             <img src={data.image} alt="" />
@@ -20,20 +16,11 @@ export default function DestinationContent() {
           <div className="destinationContent">
             <nav>
               <ul>
-                <li>
-                  <NavLink to="/React-Space-Router/destination/" end>
-                    MOON
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/React-Space-Router/destination/mars">MARS</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/React-Space-Router/destination/europa">EUROPA</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/React-Space-Router/destination/titan">TITAN</NavLink>
-                </li>
+                {dataDestination.map((item) => (
+                  <li>
+                    <NavLink to={`/React-Space-Router/destination/${item.link}`}>{item.name.toUpperCase()}</NavLink>
+                  </li>
+                ))}
               </ul>
             </nav>
             <div className="destinationContentDescription">

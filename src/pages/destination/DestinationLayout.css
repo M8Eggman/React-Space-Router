@@ -1,0 +1,11 @@
+.destinationTitle {
+  display: inline-block;
+  color: white;
+  letter-spacing: 5px;
+  position: absolute;
+  top: 180px;
+  left: 250px;
+}
+.destinationTitle span {
+  color: gray;
+}

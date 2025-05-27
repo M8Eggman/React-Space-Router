@@ -4,19 +4,8 @@
   background-position: center;
   height: 100%;
 }
-.sectionDestination h2 {
-  display: inline-block;
-  color: white;
-  letter-spacing: 5px;
-  position: relative;
-  top: 200px;
-  left: 250px;
-}
-.sectionDestination h2 span {
-  color: gray;
-}
 .destination {
-  padding-top: 220px;
+  padding-top: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,12 +22,17 @@
   gap: 40px;
 }
 .destinationContent > nav > ul > li {
-  padding-block: 20px;
   font-size: 20px;
 }
 .destinationContent > nav > ul li a {
   color: #d6dcfd;
   text-decoration: none;
+  padding-block: 20px;
+  display: block;
+  letter-spacing: 5px;
+}
+.destinationContent > nav a.active {
+  border-bottom: 3px solid white;
 }
 .destinationContentDescription {
   border-bottom: 1px solid #d6dcfd80;

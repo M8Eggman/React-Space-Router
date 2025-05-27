@@ -1,6 +1,6 @@
 import "./Nav.css";
 import logo from "../../assets/shared/logo.svg";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Nav() {
   return (
@@ -11,7 +11,9 @@ export default function Nav() {
         </div>
         <ul>
           <li>
-            <NavLink to="/React-Space-Router" end>00 HOME</NavLink>
+            <NavLink to="/React-Space-Router" end>
+              00 HOME
+            </NavLink>
           </li>
           <li>
             <NavLink to="/React-Space-Router/destination">01 DESTINATION</NavLink>

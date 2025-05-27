@@ -10,6 +10,9 @@
   align-items: center;
   padding-top: 250px;
 }
+.home a {
+  text-decoration: none;
+}
 .homeText {
   width: 600px;
 }
@@ -27,14 +30,20 @@
   font-size: 200px;
   font-family: "Bellefair";
 }
-.homeButton button {
+.homeButton {
   background-color: white;
   border: none;
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeButton p {
+  color: black;
   font-family: "Bellefair";
+  font-size: 30px;
 }
 @media screen and (max-width: 768px) {
   .home {
