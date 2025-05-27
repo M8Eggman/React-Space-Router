@@ -10,6 +10,9 @@ export default function DestinationContent() {
   return (
     <>
       <section className="sectionDestination">
+        <h2>
+          <span>01</span> PICK YOUR DESTINATION
+        </h2>
         <div className="destination">
           <div className="destinationImg">
             <img src={data.image} alt="" />
@@ -18,31 +21,33 @@ export default function DestinationContent() {
             <nav>
               <ul>
                 <li>
-                  <NavLink>MOON</NavLink>
+                  <NavLink to="/React-Space-Router/destination/" end>
+                    MOON
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink>MARS</NavLink>
+                  <NavLink to="/React-Space-Router/destination/mars">MARS</NavLink>
                 </li>
                 <li>
-                  <NavLink>EUROPA</NavLink>
+                  <NavLink to="/React-Space-Router/destination/europa">EUROPA</NavLink>
                 </li>
                 <li>
-                  <NavLink>TITAN</NavLink>
+                  <NavLink to="/React-Space-Router/destination/titan">TITAN</NavLink>
                 </li>
               </ul>
             </nav>
             <div className="destinationContentDescription">
-              <h2>{data.name.toUpperCase()}</h2>
+              <h3>{data.name.toUpperCase()}</h3>
               <p>{data.description}</p>
             </div>
             <div className="destinationContentInfo">
-              <div className="destinationContentInfoDistance">
+              <div>
                 <p>AVG. DISTANCE</p>
-                <p>{data.distance}</p>
+                <p>{data.distance.toUpperCase()}</p>
               </div>
-              <div className="destinationContentInfoTime">
+              <div>
                 <p>EST. TRAVEL TIME</p>
-                <p>{data.travelTime}</p>
+                <p>{data.travelTime.toUpperCase()}</p>
               </div>
             </div>
           </div>

@@ -20,12 +20,12 @@ export default function App() {
         </Route>
         {/* Crew */}
         <Route path="/React-Space-Router/crew">
-          <Route index element={<DestinationContent />} />
+          <Route index element={<CrewContent />} />
           <Route path=":name" element={<CrewContent />} />
         </Route>
         {/* Technology */}
         <Route path="/React-Space-Router/technology">
-          <Route index element={<DestinationContent />} />
+          <Route index element={<TechnologyContent />} />
           <Route path=":technology" element={<TechnologyContent />} />
         </Route>
       </Routes>

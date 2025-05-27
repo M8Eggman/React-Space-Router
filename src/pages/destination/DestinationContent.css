@@ -1,0 +1,84 @@
+.sectionDestination {
+  background-image: url("../../assets/destination/background-destination-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+.sectionDestination h2 {
+  display: inline-block;
+  color: white;
+  letter-spacing: 5px;
+  position: relative;
+  top: 200px;
+  left: 250px;
+}
+.sectionDestination h2 span {
+  color: gray;
+}
+.destination {
+  padding-top: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+}
+.destinationContent {
+  width: 380px;
+}
+.destinationContent > nav > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 40px;
+}
+.destinationContent > nav > ul > li {
+  padding-block: 20px;
+  font-size: 20px;
+}
+.destinationContent > nav > ul li a {
+  color: #d6dcfd;
+  text-decoration: none;
+}
+.destinationContentDescription {
+  border-bottom: 1px solid #d6dcfd80;
+}
+.destinationContentDescription h3 {
+  color: white;
+  font-size: 100px;
+  margin-block: 20px;
+  font-family: "Bellefair";
+}
+.destinationContentDescription p {
+  color: #d6dcfd;
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+.destinationContentInfo {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+.destinationContentInfo > div > p:first-of-type {
+  color: #d6dcfd;
+  letter-spacing: 2px;
+  font-size: 18px;
+  margin: 0;
+}
+.destinationContentInfo > div > p:last-of-type {
+  color: white;
+  font-size: 30px;
+  margin: 0;
+  font-family: "Bellefair";
+}
+@media screen and (max-width: 768px) {
+  .home {
+    background-image: url("../../assets/destination/background-destination-tablet.jpg");
+  }
+}
+@media screen and (max-width: 576px) {
+  .home {
+    background-image: url("../../assets/destination/background-destination-mobile.jpg");
+  }
+}
