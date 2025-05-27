@@ -4,8 +4,12 @@ import dataCrew from "../../data/dataCrew.json";
 
 export default function CrewContent() {
   const { destination } = useParams();
-  // si destination existe cle = dest sinon moon (valeur par défaut)
-  const cle = destination ? destination : "vehicle";
-  const data = dataCrew[cle];
-  return <></>;
+  const data = dataCrew.find((item) => item.link === destination);
+  return (
+    <>
+      <section className="sectionCrew">
+        <div className="crew"></div>
+      </section>
+    </>
+  );
 }

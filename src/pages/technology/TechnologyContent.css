@@ -1,0 +1,23 @@
+.sectionTechnology {
+  background-image: url("../../assets/technology/background-technology-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+.technology {
+  padding-top: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+}
+@media screen and (max-width: 768px) {
+  .sectionTechnology {
+    background-image: url("../../assets/technology/background-technology-tablet.jpg");
+  }
+}
+@media screen and (max-width: 576px) {
+  .sectionTechnology {
+    background-image: url("../../assets/technology/background-technology-mobile.jpg");
+  }
+}

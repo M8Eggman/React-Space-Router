@@ -8,7 +8,7 @@ export default function TechnologyLayout() {
     <>
       <Nav />
       <h2 className="technologyTitle">
-        <span>01</span> PICK YOUR DESTINATION
+        <span>03</span> SPACE LAUNCH 101
       </h2>
       <Outlet />
     </>

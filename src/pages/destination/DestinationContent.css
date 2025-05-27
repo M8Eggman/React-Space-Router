@@ -67,12 +67,12 @@
   font-family: "Bellefair";
 }
 @media screen and (max-width: 768px) {
-  .home {
+  .sectionDestination {
     background-image: url("../../assets/destination/background-destination-tablet.jpg");
   }
 }
 @media screen and (max-width: 576px) {
-  .home {
+  .sectionDestination {
     background-image: url("../../assets/destination/background-destination-mobile.jpg");
   }
 }

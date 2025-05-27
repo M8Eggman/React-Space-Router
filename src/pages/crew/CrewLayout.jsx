@@ -7,7 +7,7 @@ export default function CrewLayout() {
     <>
       <Nav />
       <h2 className="crewTitle">
-        <span>01</span> PICK YOUR DESTINATION
+        <span>02</span> MEET YOUR CREW
       </h2>
       <Outlet />
     </>

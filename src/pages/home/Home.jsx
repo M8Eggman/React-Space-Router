@@ -16,7 +16,7 @@ export default function Home() {
               we’ll give you a truly out of this world experience!
             </p>
           </div>
-          <Link>
+          <Link to="/React-Space-Router/destination">
             <div className="homeButton">
               <p>EXPLORE</p>
             </div>
