@@ -1,5 +1,15 @@
 import "./App.css";
+import { Route, Routes } from "react-router-dom";
 
 export default function App() {
-  return <></>;
+  return (
+    <>
+      <Routes>
+        <Route />
+        <Route></Route>
+        <Route></Route>
+        <Route></Route>
+      </Routes>
+    </>
+  );
 }
