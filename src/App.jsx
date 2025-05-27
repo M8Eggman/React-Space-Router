@@ -17,14 +17,17 @@ export default function App() {
         <Route path="/React-Space-Router" element={<Home />} />
         {/* Destination */}
         <Route path="/React-Space-Router/destination" element={<DestinationLayout />}>
-          <Route path=":destination" element={<DestinationContent />} />
+          <Route index element={<DestinationContent defaultValue="moon" />} />
+          <Route path=":destination" element={<DestinationContent  />} />
         </Route>
         {/* Crew */}
         <Route path="/React-Space-Router/crew" element={<CrewLayout />}>
+          <Route index element={<CrewContent defaultValue="douglas" />} />
           <Route path=":name" element={<CrewContent />} />
         </Route>
         {/* Technology */}
         <Route path="/React-Space-Router/technology" element={<TechnologyLayout />}>
+          <Route index element={<TechnologyContent defaultValue="vehicle" />} />
           <Route path=":technology" element={<TechnologyContent />} />
         </Route>
       </Routes>
