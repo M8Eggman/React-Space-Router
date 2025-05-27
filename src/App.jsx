@@ -5,6 +5,7 @@ import TechnologyLayout from "./pages/technology/TechnologyLayout";
 import CrewLayout from "./pages/crew/CrewLayout";
 import DestinationLayout from "./pages/destination/DestinationLayout";
 // import page
+import Home from "./pages/home/Home";
 import DestinationContent from "./pages/destination/DestinationContent";
 import CrewContent from "./pages/crew/CrewContent";
 import TechnologyContent from "./pages/technology/TechnologyContent";
@@ -13,7 +14,7 @@ export default function App() {
   return (
     <>
       <Routes>
-        <Route path="/React-Space-Router/" element={<Home />} />
+        <Route path="/React-Space-Router" element={<Home />} />
         {/* Destination */}
         <Route path="/React-Space-Router/destination" element={<DestinationLayout />}>
           <Route path=":destination" element={<DestinationContent />} />
