@@ -1,0 +1,48 @@
+.sectionHome {
+  background-image: url("../../assets/home/background-home-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+.home {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 250px;
+}
+.homeText {
+  width: 600px;
+}
+.homeText p {
+  color: white;
+}
+.homeText p:first-of-type {
+  font-size: 30px;
+}
+.homeText p:last-of-type {
+  font-size: 22px;
+}
+.homeText h1 {
+  color: white;
+  font-size: 200px;
+  font-family: "Bellefair";
+}
+.homeButton button {
+  background-color: white;
+  border: none;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  font-size: 30px;
+  font-family: "Bellefair";
+}
+@media screen and (max-width: 768px) {
+  .home {
+    background-image: url("../../assets/home/background-home-tablet.jpg");
+  }
+}
+@media screen and (max-width: 576px) {
+  .home {
+    background-image: url("../../assets/home/background-home-mobile.jpg");
+  }
+}
