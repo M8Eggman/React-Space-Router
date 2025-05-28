@@ -22,7 +22,7 @@
   gap: 40px;
 }
 .destinationContent > nav > ul > li {
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
 }
 .destinationContent > nav > ul li a {
   color: #d6dcfd;
@@ -45,13 +45,13 @@
 }
 .destinationContentDescription h3 {
   color: white;
-  font-size: 100px;
+  font-size: 6.25rem; /* 100px */
   margin-block: 20px;
   font-family: "Bellefair";
 }
 .destinationContentDescription p {
   color: #d6dcfd;
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
   line-height: 1.8;
   margin-bottom: 40px;
 }
@@ -63,12 +63,12 @@
 .destinationContentInfo > div > p:first-of-type {
   color: #d6dcfd;
   letter-spacing: 2px;
-  font-size: 18px;
+  font-size: 1.125rem; /* 18px */
   margin: 0;
 }
 .destinationContentInfo > div > p:last-of-type {
   color: white;
-  font-size: 30px;
+  font-size: 1.875rem; /* 30px */
   margin: 0;
   font-family: "Bellefair";
 }
