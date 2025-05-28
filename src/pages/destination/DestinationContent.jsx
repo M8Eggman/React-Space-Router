@@ -4,7 +4,7 @@ import dataDestination from "../../data/dataDestination.json";
 
 export default function DestinationContent() {
   const { destination } = useParams();
-  const data = dataDestination.find((item) => item.link === destination);
+  const data = dataDestination.find((item) => item.link.toLowerCase() === destination.toLowerCase());
 
   return (
     <>
@@ -17,7 +17,7 @@ export default function DestinationContent() {
             <nav>
               <ul>
                 {dataDestination.map((item) => (
-                  <li>
+                  <li key={item.link}>
                     <NavLink to={`/React-Space-Router/destination/${item.link}`}>{item.name.toUpperCase()}</NavLink>
                   </li>
                 ))}

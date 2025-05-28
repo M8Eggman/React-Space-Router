@@ -11,6 +11,54 @@
   align-items: center;
   gap: 150px;
 }
+.technology > nav > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.technology > nav > ul > li {
+  font-size: 20px;
+}
+.technology > nav > ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  display: block;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid white;
+  font-size: 50px;
+  font-family: "Bellefair";
+}
+.technology > nav a.active {
+  background-color: white;
+  color: black;
+}
+.technologyContent {
+  width: 420px;
+}
+.technologyContent p:first-of-type {
+  font-size: 18px;
+  color: #d6dcfd;
+}
+.technologyContent p:last-of-type {
+  font-size: 20px;
+  color: #d6dcfd;
+  line-height: 1.8;
+}
+.technologyContent h3 {
+  font-size: 50px;
+  margin-block: 20px;
+  color: white;
+  font-family: "Bellefair";
+}
 @media screen and (max-width: 768px) {
   .sectionTechnology {
     background-image: url("../../assets/technology/background-technology-tablet.jpg");
