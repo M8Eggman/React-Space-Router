@@ -2,14 +2,14 @@
   background-image: url("../../assets/crew/background-crew-desktop.jpg");
   background-size: cover;
   background-position: center;
-  height: 100%;
+  min-height: 100%;
 }
 .crew {
   padding-top: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 150px;
+  gap: 100px;
 }
 .crewContent > nav > ul {
   list-style: none;
@@ -67,13 +67,41 @@
 .crewImg img {
   width: 400px;
 }
+@media screen and (max-width: 992px) {
+  .crew {
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: initial;
+    gap: 20px;
+  }
+  .crewContent > nav {
+    margin-bottom: 20px;
+  }
+}
 @media screen and (max-width: 768px) {
   .sectionCrew {
     background-image: url("../../assets/crew/background-crew-tablet.jpg");
+  }
+  .crew {
+    padding-top: 100px;
+  }
+  .crewContentDescription {
+    width: 80vw;
   }
 }
 @media screen and (max-width: 576px) {
   .sectionCrew {
     background-image: url("../../assets/crew/background-crew-mobile.jpg");
+  }
+  .crew {
+    padding-top: 150px;
+  }
+  .crewImg {
+    width: 80vw;
+    height: 120vw;
+  }
+  .crewImg img {
+    width: 80vw;
   }
 }
