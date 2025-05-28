@@ -71,7 +71,7 @@
   .crew {
     padding-top: 200px;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: initial;
     gap: 20px;
   }
