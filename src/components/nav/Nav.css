@@ -7,6 +7,13 @@
   position: fixed;
   top: 0;
 }
+#root > nav button {
+  display: none;
+  border: #d0d6f9 1px solid;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background: none;
+}
 #root > nav .navLogo {
   padding-inline: 30px;
   display: flex;
@@ -33,8 +40,8 @@
   gap: 7.5%;
 }
 #root > nav ul li {
-  font-size: 20px;
-  letter-spacing: 3px;
+  font-size: 1.25rem; /* 20px */
+  letter-spacing: 0.1875rem; /* 3px */
   box-sizing: border-box;
 }
 #root > nav ul li a {
@@ -51,4 +58,44 @@
 }
 #root > nav a.active {
   border-bottom: 2px solid white;
+}
+
+@media screen and (max-width: 992px) {
+  #root > nav {
+    padding-block: 25px;
+  }
+  #root > nav .navLogo::after {
+    width: 50%;
+  }
+  #root > nav ul {
+    flex: 5;
+  }
+}
+@media screen and (max-width: 768px) {
+  #root > nav .navLogo {
+    padding-inline: 30px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex: 1;
+  }
+  #root > nav {
+    padding-inline: 20px;
+  }
+  #root > nav .navLogo::after {
+    width: 0;
+    height: 0;
+  }
+  #root > nav ul {
+    display: none;
+  }
+  #root > nav button {
+    display: block;
+  }
+  #root > nav .navLogo {
+    padding-inline: 0;
+    flex: initial;
+  }
+}
+@media screen and (max-width: 576px) {
 }

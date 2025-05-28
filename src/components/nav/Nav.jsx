@@ -1,5 +1,7 @@
 import "./Nav.css";
 import logo from "../../assets/shared/logo.svg";
+import hamburger from "../../assets/shared/icon-hamburger.svg";
+import close from "../../assets/shared/icon-close.svg";
 import { NavLink } from "react-router-dom";
 
 export default function Nav() {
@@ -25,6 +27,7 @@ export default function Nav() {
             <NavLink to="/React-Space-Router/technology">03 TECHNOLOGY</NavLink>
           </li>
         </ul>
+        <button><img src={hamburger} alt="" /></button>
       </nav>
     </>
   );

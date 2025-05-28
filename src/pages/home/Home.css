@@ -46,13 +46,55 @@
   font-size: 1.875rem; /* 30px */
   margin: 0;
 }
+@media screen and (max-width: 992px) {
+  .home {
+    flex-direction: column;
+    justify-content: initial;
+    align-items: center;
+    padding-top: 150px;
+  }
+  .homeText p {
+    text-align: center;
+  }
+  .homeText p:last-of-type {
+    margin-bottom: 40px;
+  }
+  .homeText h1 {
+    text-align: center;
+  }
+  .homeText h1 {
+    font-size: 12rem;
+  }
+  .homeButton {
+    width: 225px;
+    height: 225px;
+  }
+}
 @media screen and (max-width: 768px) {
   .sectionHome {
     background-image: url("../../assets/home/background-home-tablet.jpg");
+  }
+  .home {
+    padding-top: 100px;
+  }
+  .homeText {
+    width: 80vw;
+  }
+  .homeText h1 {
+    text-align: center;
+    font-size: 11rem;
   }
 }
 @media screen and (max-width: 576px) {
   .sectionHome {
     background-image: url("../../assets/home/background-home-mobile.jpg");
+  }
+  .homeText h1 {
+    font-size: 8rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .homeText {
+    width: 95vw;
   }
 }
