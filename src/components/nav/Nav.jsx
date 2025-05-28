@@ -1,8 +1,7 @@
 import "./Nav.css";
 import logo from "../../assets/shared/logo.svg";
 import hamburger from "../../assets/shared/icon-hamburger.svg";
-import close from "../../assets/shared/icon-close.svg";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 
 export default function Nav() {
@@ -11,7 +10,9 @@ export default function Nav() {
     <>
       <nav>
         <div className="navLogo">
-          <img src={logo} alt="" />
+          <Link to="/React-Space-Router">
+            <img src={logo} alt="" />
+          </Link>
         </div>
         <ul>
           <li>

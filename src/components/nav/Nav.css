@@ -47,7 +47,7 @@
   letter-spacing: 0.1875rem; /* 3px */
   box-sizing: border-box;
 }
-#root > nav a {
+#root > nav ul a {
   text-decoration: none;
   color: white;
   padding-block: 30px;
@@ -55,11 +55,11 @@
   border-bottom: 2px solid rgba(255, 255, 255, 0);
   transition: border-bottom 200ms;
 }
-#root > nav a:hover {
+#root > nav ul a:hover {
   border-bottom: 2px solid white;
   transition: border-bottom 200ms;
 }
-#root > nav a.active {
+#root > nav ul a.active {
   border-bottom: 2px solid white;
 }
 @keyframes animationNav {
