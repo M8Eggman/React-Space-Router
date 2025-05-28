@@ -42,6 +42,12 @@
   color: white;
   padding-block: 30px;
   display: block;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  transition: border-bottom 200ms;
+}
+#root > nav ul li a:hover {
+  border-bottom: 2px solid white;
+  transition: border-bottom 200ms;
 }
 #root > nav a.active {
   border-bottom: 2px solid white;

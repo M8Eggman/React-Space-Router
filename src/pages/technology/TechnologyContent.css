@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 150px;
+  gap: 100px;
 }
 .technology > nav > ul {
   list-style: none;
@@ -33,9 +33,15 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  border: 2px solid white;
+  border: 1px solid white;
   font-size: 50px;
   font-family: "Bellefair";
+  transition: background-color 200ms, color 200ms;
+}
+.technology > nav > ul li a:hover {
+  background-color: white;
+  color: black;
+  transition: background-color 200ms, color 200ms;
 }
 .technology > nav a.active {
   background-color: white;
