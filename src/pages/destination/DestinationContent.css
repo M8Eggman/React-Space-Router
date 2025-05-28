@@ -2,7 +2,7 @@
   background-image: url("../../assets/destination/background-destination-desktop.jpg");
   background-size: cover;
   background-position: center;
-  height: 100%;
+  min-height: 100%;
 }
 .destination {
   padding-top: 250px;
@@ -72,13 +72,64 @@
   margin: 0;
   font-family: "Bellefair";
 }
+@media screen and (max-width: 992px) {
+  .destination {
+    padding-top: 200px;
+    gap: 20px;
+  }
+  .destinationImg img {
+    width: 40vw;
+  }
+  .destinationContent {
+    width: 40vw;
+  }
+  .destinationContent > nav > ul {
+    gap: 20px;
+  }
+  .destinationContentDescription h3 {
+    font-size: 5rem;
+    margin-block: 10px;
+  }
+}
 @media screen and (max-width: 768px) {
   .sectionDestination {
     background-image: url("../../assets/destination/background-destination-tablet.jpg");
+  }
+  .destination {
+    padding-top: 100px;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .destinationImg img {
+    width: 30vw;
+  }
+  .destinationContent {
+    width: 80vw;
+  }
+  .destinationContent > nav > ul {
+    gap: 5vw;
   }
 }
 @media screen and (max-width: 576px) {
   .sectionDestination {
     background-image: url("../../assets/destination/background-destination-mobile.jpg");
   }
+  .destination {
+   padding-top: 150px;
+  }
+  .destinationImg img {
+    width: 40vw;
+  }
+  .destinationContent {
+    width: 90vw;
+  }
+  .destinationContent > nav > ul {
+    gap: 5vw;
+  }
+  .destinationContentDescription h3 {
+    font-size: 4rem;
+    margin-block: 5px;
+  }
+}
+@media screen and (max-width: 375px) {
 }

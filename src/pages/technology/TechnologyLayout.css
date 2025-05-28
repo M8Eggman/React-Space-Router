@@ -4,8 +4,26 @@
   letter-spacing: 5px;
   position: absolute;
   top: 180px;
-  left: 250px;
+  left: 10vw;
 }
 .technologyTitle span {
   color: gray;
+}
+@media screen and (max-width: 992px) {
+  .technologyTitle {
+    top: 140px;
+    left: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .technologyTitle {
+    top: 34px;
+    left: 90px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .technologyTitle {
+    top: 100px;
+    left: 20px;
+  }
 }
