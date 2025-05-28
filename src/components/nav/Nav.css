@@ -1,4 +1,5 @@
 #root > nav {
+  z-index: 100;
   width: 100%;
   display: flex;
   align-items: center;
@@ -13,6 +14,7 @@
   padding: 10px 15px;
   border-radius: 10px;
   background: none;
+  cursor: pointer;
 }
 #root > nav .navLogo {
   padding-inline: 30px;
@@ -44,7 +46,7 @@
   letter-spacing: 0.1875rem; /* 3px */
   box-sizing: border-box;
 }
-#root > nav ul li a {
+#root > nav a {
   text-decoration: none;
   color: white;
   padding-block: 30px;
@@ -52,12 +54,35 @@
   border-bottom: 2px solid rgba(255, 255, 255, 0);
   transition: border-bottom 200ms;
 }
-#root > nav ul li a:hover {
+#root > nav a:hover {
   border-bottom: 2px solid white;
   transition: border-bottom 200ms;
 }
 #root > nav a.active {
   border-bottom: 2px solid white;
+}
+@keyframes animationNav {
+  from {
+    transform: scaleY(0%);
+  }
+  to {
+    transform: scaleY(100%);
+  }
+}
+#root > nav .navResponsive {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.1);
+  right: 20px;
+  top: 80px;
+  border-radius: 10px;
+  transform-origin: top;
+  animation: animationNav forwards 500ms;
+}
+#root > nav .navResponsive a {
+  width: 150px;
+  text-align: right;
 }
 
 @media screen and (max-width: 992px) {
