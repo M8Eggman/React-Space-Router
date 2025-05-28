@@ -13,19 +13,19 @@ export default function App() {
   return (
     <>
       <Routes>
-        <Route path="/React-Space-Router/" element={<Home />} />
+        <Route path="/" element={<Home />} />
         {/* Destination */}
-        <Route path="/React-Space-Router/destination/" element={<DestinationLayout />}>
+        <Route path="/destination/" element={<DestinationLayout />}>
           <Route index element={<Navigate to="moon" />} /> {/* navigate attribu une route par défaut dans ce cas-ci "moon"  */}
           <Route path=":destination" element={<DestinationContent />} />
         </Route>
         {/* Crew */}
-        <Route path="/React-Space-Router/crew/" element={<CrewLayout />}>
+        <Route path="/crew/" element={<CrewLayout />}>
           <Route index element={<Navigate to="douglas" />} />
           <Route path=":name" element={<CrewContent />} />
         </Route>
         {/* Technology */}
-        <Route path="/React-Space-Router/technology/" element={<TechnologyLayout />}>
+        <Route path="/technology/" element={<TechnologyLayout />}>
           <Route index element={<Navigate to="vehicle" />} />
           <Route path=":technology" element={<TechnologyContent />} />
         </Route>

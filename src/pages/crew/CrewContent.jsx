@@ -19,7 +19,7 @@ export default function CrewContent() {
               <ul>
                 {dataCrew.map((item) => (
                   <li key={item.link}>
-                    <NavLink to={`/React-Space-Router/crew/${item.link}`}></NavLink>
+                    <NavLink to={`/crew/${item.link}`}></NavLink>
                   </li>
                 ))}
               </ul>

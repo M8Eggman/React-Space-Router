@@ -10,24 +10,24 @@ export default function Nav() {
     <>
       <nav>
         <div className="navLogo">
-          <Link to="/React-Space-Router">
+          <Link to="/">
             <img src={logo} alt="" />
           </Link>
         </div>
         <ul>
           <li>
-            <NavLink to="/React-Space-Router" end>
+            <NavLink to="/" end>
               00 HOME
             </NavLink>
           </li>
           <li>
-            <NavLink to="/React-Space-Router/destination">01 DESTINATION</NavLink>
+            <NavLink to="/destination">01 DESTINATION</NavLink>
           </li>
           <li>
-            <NavLink to="/React-Space-Router/crew">02 CREW</NavLink>
+            <NavLink to="/crew">02 CREW</NavLink>
           </li>
           <li>
-            <NavLink to="/React-Space-Router/technology">03 TECHNOLOGY</NavLink>
+            <NavLink to="/technology">03 TECHNOLOGY</NavLink>
           </li>
         </ul>
         <button onClick={() => setNav(!nav)}>
@@ -35,12 +35,12 @@ export default function Nav() {
         </button>
         {nav && (
           <div className="navResponsive">
-            <NavLink to="/React-Space-Router" end>
+            <NavLink to="/" end>
               00 HOME
             </NavLink>
-            <NavLink to="/React-Space-Router/destination">01 DESTINATION</NavLink>
-            <NavLink to="/React-Space-Router/crew">02 CREW</NavLink>
-            <NavLink to="/React-Space-Router/technology">03 TECHNOLOGY</NavLink>
+            <NavLink to="/destination">01 DESTINATION</NavLink>
+            <NavLink to="/crew">02 CREW</NavLink>
+            <NavLink to="/technology">03 TECHNOLOGY</NavLink>
           </div>
         )}
       </nav>

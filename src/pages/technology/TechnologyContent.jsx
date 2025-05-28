@@ -13,7 +13,7 @@ export default function TechnologyContent() {
             <ul>
               {dataTechnology.map((item, index) => (
                 <li key={item.link}>
-                  <NavLink to={`/React-Space-Router/technology/${item.link}`}>{index + 1}</NavLink>
+                  <NavLink to={`/technology/${item.link}`}>{index + 1}</NavLink>
                 </li>
               ))}
             </ul>

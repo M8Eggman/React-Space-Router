@@ -18,7 +18,7 @@ export default function DestinationContent() {
               <ul>
                 {dataDestination.map((item) => (
                   <li key={item.link}>
-                    <NavLink to={`/React-Space-Router/destination/${item.link}`}>{item.name.toUpperCase()}</NavLink>
+                    <NavLink to={`/destination/${item.link}`}>{item.name.toUpperCase()}</NavLink>
                   </li>
                 ))}
               </ul>
