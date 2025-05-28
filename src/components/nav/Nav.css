@@ -84,8 +84,20 @@
 #root > nav .navResponsive a {
   width: 150px;
   text-align: right;
+  text-decoration: none;
+  color: white;
+  padding-block: 30px;
+  display: block;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  transition: border-bottom 200ms;
 }
-
+#root > nav .navResponsive a:hover {
+  border-bottom: 2px solid white;
+  transition: border-bottom 200ms;
+}
+#root > nav .navResponsive a.active {
+  border-bottom: 2px solid white;
+}
 @media screen and (max-width: 992px) {
   #root > nav {
     padding-block: 25px;
