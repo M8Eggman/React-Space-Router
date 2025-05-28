@@ -2,14 +2,14 @@
   background-image: url("../../assets/technology/background-technology-desktop.jpg");
   background-size: cover;
   background-position: center;
-  height: 100%;
+  min-height: 100%;
 }
 .technology {
   padding-top: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 75px;
 }
 .technology > nav > ul {
   list-style: none;
@@ -64,13 +64,64 @@
   color: white;
   font-family: "Bellefair";
 }
+.technologyImg img {
+  width: 400px;
+}
+@media screen and (max-width: 992px) {
+  .technology {
+    padding-top: 200px;
+    flex-direction: column;
+    justify-content: initial;
+    gap: 20px;
+  }
+  .technology > nav > ul {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+  .technologyContent {
+    width: 75vw;
+  }
+  .technologyImg img {
+    width: 75vw;
+  }
+}
 @media screen and (max-width: 768px) {
   .sectionTechnology {
     background-image: url("../../assets/technology/background-technology-tablet.jpg");
+  }
+  .technology {
+    padding-top: 100px;
+  }
+  .technology > nav > ul {
+    gap: 20px;
+  }
+  .technology > nav > ul li a {
+    height: 80px;
+    width: 80px;
+  }
+  .technologyContent {
+    width: 80vw;
+  }
+  .technologyImg img {
+    width: 80vw;
   }
 }
 @media screen and (max-width: 576px) {
   .sectionTechnology {
     background-image: url("../../assets/technology/background-technology-mobile.jpg");
+  }
+  .technology {
+    padding-top: 150px;
+  }
+  .technology > nav > ul li a {
+    height: 75px;
+    width: 75px;
+  }
+  .technologyContent {
+    width: 90vw;
+  }
+  .technologyImg img {
+    width: 90vw;
   }
 }
