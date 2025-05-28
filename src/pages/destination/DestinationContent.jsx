@@ -1,10 +1,9 @@
 import "./DestinationContent.css";
 import { NavLink, useParams } from "react-router";
-import dataDestination from "../../data/dataDestination.json";
 
-export default function DestinationContent() {
+export default function DestinationContent(props) {
   const { destination } = useParams();
-  const data = dataDestination.find((item) => item.link.toLowerCase() === destination.toLowerCase());
+  const data = props.data.find((item) => item.link.toLowerCase() === destination.toLowerCase());
 
   return (
     <>
@@ -16,7 +15,7 @@ export default function DestinationContent() {
           <div className="destinationContent">
             <nav>
               <ul>
-                {dataDestination.map((item) => (
+                {props.data.map((item) => (
                   <li key={item.link}>
                     <NavLink to={`/destination/${item.link}`}>{item.name.toUpperCase()}</NavLink>
                   </li>

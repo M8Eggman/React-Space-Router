@@ -1,17 +1,17 @@
 import { NavLink, useParams } from "react-router-dom";
 import "./TechnologyContent.css";
-import dataTechnology from "../../data/dataTechnology.json";
 
-export default function TechnologyContent() {
+
+export default function TechnologyContent(props) {
   const { technology } = useParams();
-  const data = dataTechnology.find((item) => item.link.toLowerCase() === technology.toLowerCase());
+  const data = props.data.find((item) => item.link.toLowerCase() === technology.toLowerCase());
   return (
     <>
       <section className="sectionTechnology">
         <div className="technology">
           <nav>
             <ul>
-              {dataTechnology.map((item, index) => (
+              {props.data.map((item, index) => (
                 <li key={item.link}>
                   <NavLink to={`/technology/${item.link}`}>{index + 1}</NavLink>
                 </li>

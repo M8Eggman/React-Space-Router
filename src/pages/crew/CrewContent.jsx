@@ -1,10 +1,9 @@
 import { NavLink, useParams } from "react-router-dom";
 import "./CrewContent.css";
-import dataCrew from "../../data/dataCrew.json";
 
-export default function CrewContent() {
+export default function CrewContent(props) {
   const { name } = useParams();
-  const data = dataCrew.find((item) => item.link.toLowerCase() === name.toLowerCase());
+  const data = props.data.find((item) => item.link.toLowerCase() === name.toLowerCase());
   return (
     <>
       <section className="sectionCrew">
@@ -17,7 +16,7 @@ export default function CrewContent() {
             </div>
             <nav>
               <ul>
-                {dataCrew.map((item) => (
+                {props.data.map((item) => (
                   <li key={item.link}>
                     <NavLink to={`/crew/${item.link}`}></NavLink>
                   </li>
